@@ -1,0 +1,19 @@
+<!-- <div style="text-align:center"><br>
+  <h1>
+    {{ title }}!
+  </h1>
+  <calculator></calculator>
+
+<router-outlet></router-outlet> -->
+
+<div style="text-align:center">
+  <h1>Calculator</h1>
+ 
+  <input type="number"  placeholder="First Number" class="form-control" [(ngModel)]='firstNum' />
+   <input type="number" placeholder="Second Number" class="form-control" [(ngModel)]='secondNum' />
+   <br>
+   <button type="submit" (click)='calculate()'>Calculate</button>
+ 
+   <h4> {{ sum }} </h4>
+ 
+ </div>
